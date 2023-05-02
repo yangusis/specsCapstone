@@ -1,0 +1,91 @@
+.dbContainer {
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 6px 12px 40px -11px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    opacity: 0;
+    animation: fade-in ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.dbContainer.fade-in {
+    opacity: 1;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #383636;
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+.fsHeader {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.taskInput {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.submitBtn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #2e8b57;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}

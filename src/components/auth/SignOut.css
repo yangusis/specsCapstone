@@ -1,0 +1,34 @@
+.logoutWrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.logoutBtn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #383636;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.logoutBtn:hover {
+    background-color: #5d5d5d;
+}

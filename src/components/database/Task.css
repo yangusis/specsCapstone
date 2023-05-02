@@ -1,0 +1,86 @@
+.task {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task:hover {
+    transform: scale(1.05);
+}
+
+.taskName {
+    margin: 0;
+}
+
+.taskButtons {
+    display: flex;
+    align-items: center;
+}
+
+.deleteBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deleteBtn:hover {
+    background-color: #d32f2f;
+}
+
+.editBtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.editBtn:hover {
+    background-color: #388e3c;
+}
+
+.taskInput {
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 2px solid #4caf50;
+    font-size: 16px;
+}
+
+.taskChangeBtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-top: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.taskChangeBtn:hover {
+    background-color: #388e3c;
+}

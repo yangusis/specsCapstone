@@ -1,0 +1,72 @@
+body {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/specs-capstone-ce135.appspot.com/o/pastelBg.jpg?alt=media&token=d5254b4f-92c7-48df-8aff-2a475e5f5657');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.welcomeContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: calc(50vw - 10vw);
+    height: calc(50vw - 25vw);
+    flex-direction: column;
+    margin-left: 10vw;
+    opacity: 0;
+    animation: fade-in ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.welcomeContainer.fade-in {
+    opacity: 1;
+}
+
+.welcomeHeader {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.welcomeDesc {
+    margin-top: 2px;
+}
+
+.welcomeBtns {
+    display: flex;
+    justify-content: center;
+}
+
+.wLogin,
+.wRegister {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    border-radius: 100px;
+    margin: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.wLogin:hover,
+.wRegister:hover {
+    background-color: #388e3c;
+}
